@@ -12,11 +12,11 @@ begin
 x=0;y=0;z=0;
 end
 
-initial begin
-always #5 x=~x;
-always #10 y=~y;
-always #20 z=~z;
-#100
-$finish;
-end
+//initial begin
+always begin #5 x=~x; end
+always begin #10 y=~y; end
+always begin #20 z=~z; end
+//#100
+//$finish;
+//end
 endmodule

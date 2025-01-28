@@ -1,7 +1,9 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../ADDERS.srcs/sources_1/new/FA_STR.v" \
+"../../../../ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v" \
 "../../../../ADDERS.srcs/sources_1/new/HA_DF.v" \
-"../../../../ADDERS.srcs/sim_1/new/TB_HA.v" \
+"../../../../ADDERS.srcs/sim_1/new/Fourbit_TB.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

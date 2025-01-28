@@ -1,0 +1,584 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jan 28 11:41:14 2025
+# Process ID         : 1596
+# Current directory  : D:/DSD/ADDERS
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3488 D:\DSD\ADDERS\ADDERS.xpr
+# Log file           : D:/DSD/ADDERS/vivado.log
+# Journal file       : D:/DSD/ADDERS\vivado.jou
+# Running On         : bxbx
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16415 MB
+# Swap memory        : 15569 MB
+# Total Virtual      : 31984 MB
+# Available Virtual  : 17563 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/DSD/ADDERS/ADDERS.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/DSD/ADDERS/ADDERS.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Fourbit_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+ERROR: [Common 17-180] Spawn failed: No error
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Fourbit_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Fourbit_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FA_STR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA_STR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/HA_DF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HA_DF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/TB_FA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB_FA
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/TB_HA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB_HA
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Fourbit_TB_behav xil_defaultlib.Fourbit_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Fourbit_TB_behav xil_defaultlib.Fourbit_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.Fourbit_TB in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1205.562 ; gain = 6.887
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property top FOURBIT_ADDER_TB [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'FOURBIT_ADDER_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'FOURBIT_ADDER_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FOURBIT_ADDER_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FA_STR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA_STR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/HA_DF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HA_DF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'a' [D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v:10]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'cy' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:10]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:11]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:12]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:13]
+WARNING: [VRFC 10-3705] select index 4 into 'b' is out of bounds [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:13]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HA_DF
+Compiling module xil_defaultlib.FA_STR
+Compiling module xil_defaultlib.FOURBIT_ADDER
+Compiling module xil_defaultlib.FOURBIT_ADDER_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FOURBIT_ADDER_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FOURBIT_ADDER_TB_behav -key {Behavioral:sim_1:Functional:FOURBIT_ADDER_TB} -tclbatch {FOURBIT_ADDER_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source FOURBIT_ADDER_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 30 ns : File "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" Line 17
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FOURBIT_ADDER_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1226.277 ; gain = 2.867
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'FOURBIT_ADDER_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'FOURBIT_ADDER_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FOURBIT_ADDER_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FA_STR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA_STR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/HA_DF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HA_DF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER_TB
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'a' [D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v:10]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'cy' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:10]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:11]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:12]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:13]
+WARNING: [VRFC 10-3705] select index 4 into 'b' is out of bounds [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:13]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HA_DF
+Compiling module xil_defaultlib.FA_STR
+Compiling module xil_defaultlib.FOURBIT_ADDER
+Compiling module xil_defaultlib.FOURBIT_ADDER_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FOURBIT_ADDER_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FOURBIT_ADDER_TB_behav -key {Behavioral:sim_1:Functional:FOURBIT_ADDER_TB} -tclbatch {FOURBIT_ADDER_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source FOURBIT_ADDER_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 30 ns : File "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" Line 17
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FOURBIT_ADDER_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.770 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'FOURBIT_ADDER_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'FOURBIT_ADDER_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FOURBIT_ADDER_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FA_STR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA_STR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/HA_DF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HA_DF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER_TB
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'cy' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:10]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:11]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:12]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:13]
+WARNING: [VRFC 10-3705] select index 4 into 'b' is out of bounds [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:13]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HA_DF
+Compiling module xil_defaultlib.FA_STR
+Compiling module xil_defaultlib.FOURBIT_ADDER
+Compiling module xil_defaultlib.FOURBIT_ADDER_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FOURBIT_ADDER_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FOURBIT_ADDER_TB_behav -key {Behavioral:sim_1:Functional:FOURBIT_ADDER_TB} -tclbatch {FOURBIT_ADDER_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source FOURBIT_ADDER_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 30 ns : File "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" Line 17
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FOURBIT_ADDER_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.770 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+INFO: [Simtcl 6-16] Simulation closed
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'FOURBIT_ADDER_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'FOURBIT_ADDER_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FOURBIT_ADDER_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FA_STR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA_STR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/HA_DF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HA_DF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER_TB
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'cy' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:10]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:11]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:12]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'z' [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:13]
+WARNING: [VRFC 10-3705] select index 4 into 'b' is out of bounds [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:13]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HA_DF
+Compiling module xil_defaultlib.FA_STR
+Compiling module xil_defaultlib.FOURBIT_ADDER
+Compiling module xil_defaultlib.FOURBIT_ADDER_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FOURBIT_ADDER_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FOURBIT_ADDER_TB_behav -key {Behavioral:sim_1:Functional:FOURBIT_ADDER_TB} -tclbatch {FOURBIT_ADDER_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source FOURBIT_ADDER_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 30 ns : File "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" Line 17
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FOURBIT_ADDER_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1237.770 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FA_STR.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FA_STR.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FA_STR.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FA_STR.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+close_sim
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FA_STR.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'FOURBIT_ADDER_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'FOURBIT_ADDER_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FOURBIT_ADDER_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FA_STR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA_STR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/HA_DF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HA_DF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER_TB
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3705] select index 4 into 'b' is out of bounds [D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v:13]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HA_DF
+Compiling module xil_defaultlib.FA_STR
+Compiling module xil_defaultlib.FOURBIT_ADDER
+Compiling module xil_defaultlib.FOURBIT_ADDER_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FOURBIT_ADDER_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FOURBIT_ADDER_TB_behav -key {Behavioral:sim_1:Functional:FOURBIT_ADDER_TB} -tclbatch {FOURBIT_ADDER_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source FOURBIT_ADDER_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 30 ns : File "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" Line 17
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FOURBIT_ADDER_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1237.770 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FA_STR.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sim_1\new\Fourbit_TB.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FA_STR.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\DSD\ADDERS\ADDERS.srcs\sources_1\new\FOURBIT_ADDER.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'FOURBIT_ADDER_TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'FOURBIT_ADDER_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FOURBIT_ADDER_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FA_STR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA_STR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/FOURBIT_ADDER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sources_1/new/HA_DF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HA_DF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOURBIT_ADDER_TB
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FOURBIT_ADDER_TB_behav xil_defaultlib.FOURBIT_ADDER_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.HA_DF
+Compiling module xil_defaultlib.FA_STR
+Compiling module xil_defaultlib.FOURBIT_ADDER
+Compiling module xil_defaultlib.FOURBIT_ADDER_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FOURBIT_ADDER_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/DSD/ADDERS/ADDERS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FOURBIT_ADDER_TB_behav -key {Behavioral:sim_1:Functional:FOURBIT_ADDER_TB} -tclbatch {FOURBIT_ADDER_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source FOURBIT_ADDER_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 30 ns : File "D:/DSD/ADDERS/ADDERS.srcs/sim_1/new/Fourbit_TB.v" Line 17
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FOURBIT_ADDER_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1237.770 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 28 11:55:59 2025...
