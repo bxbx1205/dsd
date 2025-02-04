@@ -1,26 +1,21 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 04.02.2025 10:35:36
-// Design Name: 
-// Module Name: muxtb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+module muxi_DF_tb;
 
-module muxtb(
+    reg [3:0] i;
+    reg [1:0] s;
+    wire y;
+    
+    muxi_DF uut (i,s,y);
+    
+    initial 
+    begin
+        i = 4'b1010;
+        s = 2'b00; #10;
+        s = 2'b01; #10;
+        s = 2'b10; #10;
+        s = 2'b11; #10;
+        $stop;
+    end
 
-    );
 endmodule

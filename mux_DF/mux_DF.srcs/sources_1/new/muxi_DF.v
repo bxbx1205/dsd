@@ -2,8 +2,9 @@
 
 module muxi_DF(i,s,y);
 
-input [3:0] i;
+input [3:0] i ;
 input [1:0] s;
+
 
 output y;
 assign y = (s == 2'b00) ? i[0] :
