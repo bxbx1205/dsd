@@ -1,4 +1,7 @@
-Running: xsim.dir/muxi_DF_tb_behav/xsimk.exe -simmode gui -wdb muxi_DF_tb_behav.wdb -simrunnum 0 -socket 56193
+Running: xsim.dir/muxi_DF_tb_behav/xsimk.exe -simmode gui -wdb muxi_DF_tb_behav.wdb -simrunnum 0 -socket 56465
 Design successfully loaded
-Design Loading Memory Usage: 28360 KB (Peak: 28360 KB)
+Design Loading Memory Usage: 28372 KB (Peak: 28372 KB)
 Design Loading CPU Usage: 999 ms
+Simulation completed
+Simulation Memory Usage: 29368 KB (Peak: 29368 KB)
+Simulation CPU Usage: 1109 ms
